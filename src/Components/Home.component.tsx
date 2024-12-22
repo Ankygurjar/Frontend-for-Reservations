@@ -41,7 +41,7 @@ const Home = () => {
                             <tr key={`${key}-${index}`}>
                                 <td>{key}</td>
                                 <td>{valueArray.length}</td>
-                                <td>{item.productName}</td>
+                                <td>{item.productCost}</td>
                             </tr>
                         ))
                     ))}
