@@ -8,17 +8,6 @@ const apiService = {
                 console.error(err);
                 throw err;
             })
-    },
-    postService: (endpoint, data): Promise<Response> => {
-        return fetch(endpoint, {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify({data})
-            })
-            .then((response)=> response.json())
-            .catch((err) => err);
     }
 }
 
